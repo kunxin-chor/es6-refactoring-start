@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task List</h1>
+
+    <div>
+        <h2>Create a New Task</h2>
+        <div>
+            <label>Task Name:</label>
+            <input type="text" id="taskName" />
+        </div>
+        <div>
+            <label>Urgency:</label>
+            <input type="radio" name="urgency" class="urgency" value="1"/>
+            <label>1</label>
+
+            <input type="radio" name="urgency" class="urgency" value="2"/>
+            <label>2</label>
+
+            <input type="radio" name="urgency" class="urgency" value="3"/>
+            <label>3</label>
+
+            <input type="radio" name="urgency" class="urgency" value="4"/>
+            <label>4</label>
+
+            <input type="radio" name="urgency" class="urgency" value="5"/>
+            <label>5</label>
+        </div>
+        <input type="button" value="Create Task" id="createTask"/>
+    </div>
+
+    <button id="save-button">Save</button>
+    <ul id="tasks">
+
+    </ul>
+
+    <!-- axios cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- data.js should come first BECAUSE script.js uses a function from it -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
